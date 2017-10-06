@@ -1,0 +1,473 @@
+2017/09/26 22:28:39 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/09/26 22:28:50 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   1.983008ms| nomatch|[46m POST    [0m /v1/user/login　-d
+2017/09/26 22:29:02 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    777.457µs| nomatch|[46m POST    [0m /v1/user/login　-d
+2017/09/26 22:29:10 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   3.573169ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:29:10 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:29:28 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 382.254201ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:29:28 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:29:32 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   1.170518ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:29:32 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:29:35 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  25.246038ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:29:35 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:29:40 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  15.894405ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:29:40 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:30:29 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  26.217566ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:30:29 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:31:47 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/09/26 22:31:51 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  30.556529ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:31:51 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:32:23 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/09/26 22:32:46 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   1.570799ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:32:46 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:38:50 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 358.585195ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:38:50 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:39:00 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  40.394258ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:39:00 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:39:25 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  55.533974ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:39:25 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:39:26 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/09/26 22:39:28 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  99.059723ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:39:28 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:39:32 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  35.371468ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:39:32 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:39:34 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   59.65601ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:39:34 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:39:37 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  56.646352ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:39:37 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:40:48 [D] [utils.go:43] 401 
+2017/09/26 22:40:48 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  162.00519ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:40:48 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:40:53 [D] [utils.go:43] 401 
+2017/09/26 22:40:53 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  85.864679ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:40:53 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:40:55 [D] [utils.go:43] 401 
+2017/09/26 22:40:55 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  31.036011ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:40:55 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:40:56 [D] [utils.go:43] 401 
+2017/09/26 22:40:56 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  84.097408ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:40:56 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:40:58 [D] [utils.go:43] 401 
+2017/09/26 22:40:58 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 199.629052ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:40:58 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:44:25 [D] [utils.go:43] 401 
+2017/09/26 22:44:25 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  32.062614ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:44:25 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:44:26 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/09/26 22:44:28 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/09/26 22:44:32 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  42.055072ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:44:32 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:44:35 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  54.677663ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:44:35 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:44:53 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  28.564552ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:44:53 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:44:56 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  24.024342ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:44:56 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:44:59 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  73.093514ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:44:59 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:45:01 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  60.813538ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:45:01 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:45:12 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/09/26 22:45:12 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  27.389081ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:45:12 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:45:15 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/09/26 22:45:17 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  42.439551ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:45:17 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:45:23 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  34.653501ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:45:23 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:45:31 [D] [utils.go:43] 401 
+2017/09/26 22:45:31 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 114.013788ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:45:31 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:45:59 [D] [utils.go:43] 401 
+2017/09/26 22:45:59 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  48.699512ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:45:59 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:46:05 [D] [utils.go:43] 401 
+2017/09/26 22:46:05 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  48.558734ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:46:05 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:46:20 [D] [utils.go:43] 400 
+2017/09/26 22:46:20 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 346.901727ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/09/26 22:46:20 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:46:36 [D] [utils.go:43] 400 
+2017/09/26 22:46:36 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 186.905254ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/09/26 22:46:36 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:47:59 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 244.709852ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/09/26 22:48:06 [D] [utils.go:43] 400 
+2017/09/26 22:48:06 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  121.37417ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/09/26 22:48:06 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:48:32 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 107.426424ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:48:32 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:48:51 [D] [utils.go:43] 400 
+2017/09/26 22:48:51 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 156.438926ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/09/26 22:48:51 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:49:02 [D] [utils.go:43] 401 
+2017/09/26 22:49:02 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  31.440368ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:49:02 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/09/26 22:49:06 [D] [utils.go:43] 401 
+2017/09/26 22:49:06 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   2.068132ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/09/26 22:49:06 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:22:31 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:24:19 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:26:05 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:26:08 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:27:43 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:29:42 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:29:43 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:44:08 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:46:26 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  55.773907ms| nomatch|[46m POST    [0m /api/user/create
+2017/10/06 10:46:31 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  53.656184ms| nomatch|[46m POST    [0m /api/user/create
+2017/10/06 10:46:54 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  20.180059ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:46:54 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:47:19 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  37.612529ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:47:19 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:47:25 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  50.904246ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:47:25 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:47:51 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  95.589626ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:47:51 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:48:01 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  47.532452ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:48:01 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:48:40 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   1.891112ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:48:40 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:48:53 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  30.078738ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:48:53 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:49:02 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  70.122019ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:49:02 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:49:05 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   6.477921ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:49:05 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:49:09 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  30.079705ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:49:09 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:49:29 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:49:46 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:49:49 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:49:59 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:49:59 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  64.574455ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:49:59 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:50:39 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:50:39 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  76.306477ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:50:39 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:50:46 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:50:46 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  61.377073ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:50:46 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:51:59 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:51:59 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  61.795843ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:51:59 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:52:20 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:52:20 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  66.656365ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:52:20 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:52:26 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:52:26 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 143.745746ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:52:26 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:52:47 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:52:47 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  51.162113ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:52:47 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:53:16 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:53:22 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:53:24 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:53:24 [D] [user.go:27] [227 128 128 123 34 117 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 10:53:24 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  55.193131ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:53:24 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:53:41 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:53:41 [D] [user.go:27] [227 128 128 123 34 117 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 10:53:41 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  77.472293ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:53:41 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:54:10 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:54:18 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:54:18 [D] [user.go:27] [227 128 128 123 34 117 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 10:54:18 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  21.984288ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:55:27 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:55:28 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:55:28 [D] [user.go:27] [227 128 128 123 34 117 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 10:55:28 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  12.028458ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:55:37 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:55:37 [D] [user.go:27] [227 128 128 123 34 85 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 10:55:37 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  25.621662ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:55:44 [D] [user.go:26] &{ 0 0 0   <nil>   false     0 0 0} 
+2017/10/06 10:55:44 [D] [user.go:27] [227 128 128 123 34 85 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 10:55:44 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  47.225286ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:56:03 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:57:14 [D] [user.go:26] &{ 0 0 0 zkm123 123456 <nil>   false     0 0 0} 
+2017/10/06 10:57:14 [D] [user.go:27] [123 34 85 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 10:57:14 [D] [utils.go:43] 400 
+2017/10/06 10:57:14 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 157.228749ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:57:14 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:57:23 [D] [user.go:26] &{ 0 0 0 zkm123 123456 <nil>   false     0 0 0} 
+2017/10/06 10:57:23 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 10:57:23 [D] [utils.go:43] 400 
+2017/10/06 10:57:23 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 147.975632ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:57:23 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:57:50 [D] [user.go:26] &{ 0 0 0 zkm123 123456 <nil>   false     0 0 0} 
+2017/10/06 10:57:50 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 10:57:51 [D] [utils.go:43] 400 
+2017/10/06 10:57:51 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 181.709246ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:57:51 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 10:58:34 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 10:58:46 [D] [user.go:26] &{ 0 0 0 zkm123 123456 <nil>   false     0 0 0} 
+2017/10/06 10:58:46 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 10:58:46 [D] [utils.go:43] 400 
+2017/10/06 10:58:46 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 131.195562ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 10:58:46 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 11:01:58 [D] [user.go:26] &{ 0 0 0 zkm123 123456 <nil>   false     0 0 0} 
+2017/10/06 11:01:58 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:01:58 [D] [utils.go:43] 400 
+2017/10/06 11:01:58 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 160.236899ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:01:58 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 11:02:01 [D] [user.go:26] &{ 0 0 0 zkm123 123456 <nil>   false     0 0 0} 
+2017/10/06 11:02:01 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:02:01 [D] [utils.go:43] 400 
+2017/10/06 11:02:01 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  89.038096ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:02:01 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 11:03:01 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:03:12 [D] [user.go:26] &{ 0 0 0 zkm123 123456 <nil>   false     0 0 0} 
+2017/10/06 11:03:12 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 122 107 109 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:03:12 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 208.721131ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:03:28 [D] [user.go:26] &{ 0 0 0 admin 123456 <nil>   false     0 0 0} 
+2017/10/06 11:03:28 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 97 100 109 105 110 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:03:28 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 165.925789ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:03:37 [D] [user.go:26] &{ 0 0 0  123456 <nil>   false     0 0 0} 
+2017/10/06 11:03:37 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:03:37 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   1.031503ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:04:46 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:04:53 [D] [user.go:26] &{ 0 0 0  123456 <nil>   false     0 0 0} 
+2017/10/06 11:04:53 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:04:53 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   2.023496ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:04:57 [D] [user.go:26] &{ 0 0 0 admin 123456 <nil>   false     0 0 0} 
+2017/10/06 11:04:57 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 97 100 109 105 110 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:04:57 [D] [utils.go:43] 400 
+2017/10/06 11:04:57 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 238.275048ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:04:57 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 11:05:03 [D] [user.go:26] &{ 0 0 0 admin123 123456 <nil>   false     0 0 0} 
+2017/10/06 11:05:03 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 97 100 109 105 110 49 50 51 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:05:03 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 178.686941ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:05:10 [D] [user.go:26] &{ 0 0 0 admin12356 123456 <nil>   false     0 0 0} 
+2017/10/06 11:05:10 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 97 100 109 105 110 49 50 51 53 54 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:05:10 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 164.235044ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:05:51 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:05:58 [D] [user.go:26] &{ 0 0 0 12356 123456 <nil>   false     0 0 0} 
+2017/10/06 11:05:58 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:05:58 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 169.346316ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:06:03 [D] [user.go:26] &{ 0 0 0 12356 123456 <nil>   false     0 0 0} 
+2017/10/06 11:06:03 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:06:03 [D] [utils.go:43] 400 
+2017/10/06 11:06:03 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 162.144934ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:06:03 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 11:06:12 [D] [user.go:26] &{ 0 0 0 123567 123456 <nil>   false     0 0 0} 
+2017/10/06 11:06:12 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 55 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:06:12 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 149.287945ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:07:02 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:07:04 [D] [user.go:26] &{ 0 0 0 123567 123456 <nil>   false     0 0 0} 
+2017/10/06 11:07:04 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 55 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:07:04 [D] [utils.go:43] 400 
+2017/10/06 11:07:04 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 174.100512ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:07:04 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 11:07:10 [D] [user.go:26] &{ 0 0 0 1235678 123456 <nil>   false     0 0 0} 
+2017/10/06 11:07:10 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 55 56 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:07:10 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 158.858006ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:08:11 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:08:39 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:08:39 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   4.852677ms| nomatch|[44m GET     [0m /  
+2017/10/06 11:08:44 [D] [user.go:26] &{ 0 0 0 1235678 123456 <nil>   false 0     0 0 0} 
+2017/10/06 11:08:44 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 55 56 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:08:44 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 148.422567ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:09:10 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:09:20 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:09:35 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:09:40 [D] [user.go:26] &{ 0 0 0 1235678 123456 <nil>   false 0     0 0 0} 
+2017/10/06 11:09:40 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 55 56 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:09:40 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  151.25984ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:09:58 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:10:02 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:10:25 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:10:34 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:11:31 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:11:37 [D] [user.go:26] &{ 0 0 0 1235678 123456 <nil>   false 0     0 0 0} 
+2017/10/06 11:11:37 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 55 56 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:11:37 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 140.621747ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:12:46 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:12:56 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:12:59 [D] [user.go:26] &{ 0 0 0 1235678 123456 <nil>   false 0     0 0 0} 
+2017/10/06 11:12:59 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 55 56 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:13:00 [D] [utils.go:43] 400 
+2017/10/06 11:13:00 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 221.613767ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:13:00 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 11:13:45 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:13:54 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:13:57 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:13:58 [D] [user.go:26] &{ 0 0 0 1235678 123456 <nil>   false 0     0 0 0} 
+2017/10/06 11:13:58 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 55 56 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:13:59 [D] [utils.go:43] 400 
+2017/10/06 11:13:59 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  156.96575ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:13:59 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 11:14:06 [D] [user.go:26] &{ 0 0 0 12356789 123456 <nil>   false 0     0 0 0} 
+2017/10/06 11:14:06 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 55 56 57 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:14:06 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 156.873637ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:14:17 [D] [user.go:26] &{ 0 0 0 12356789 123456 <nil>   false 0     0 0 0} 
+2017/10/06 11:14:17 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 55 56 57 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:14:17 [D] [utils.go:43] 400 
+2017/10/06 11:14:17 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 175.560843ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:14:17 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 11:14:25 [D] [user.go:26] &{ 0 0 0 1235676789 123456 <nil>   false 0     0 0 0} 
+2017/10/06 11:14:25 [D] [user.go:27] [123 34 117 115 101 114 110 97 109 101 34 58 32 34 49 50 51 53 54 55 54 55 56 57 34 44 34 112 97 115 115 119 111 114 100 34 58 34 49 50 51 52 53 54 34 125] 
+2017/10/06 11:14:25 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 168.406952ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:14:37 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:16:40 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:16:48 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:29:20 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:29:30 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    990.292µs| nomatch|[44m GET     [0m /  
+2017/10/06 11:29:47 [D] [server.go:2568] |      127.0.0.1|[47m 302 [0m|      78.87µs|   match|[44m GET     [0m /swagger
+2017/10/06 11:29:47 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  34.982197ms|   match|[44m GET     [0m /swagger/
+2017/10/06 11:29:48 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 141.758142ms|   match|[44m GET     [0m /swagger/swagger-ui.css
+2017/10/06 11:29:48 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 447.108295ms|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2017/10/06 11:29:48 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 549.489803ms|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2017/10/06 11:29:49 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   1.007071ms|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:29:49 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  43.870071ms|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:29:50 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   5.145327ms|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2017/10/06 11:31:02 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    135.139µs|   match|[44m GET     [0m /swagger/
+2017/10/06 11:31:02 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    191.243µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:31:03 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:31:11 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:31:33 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:31:34 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|  13.244489ms|   match|[44m GET     [0m /swagger/
+2017/10/06 11:31:34 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|      180.5µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:31:34 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  41.334134ms|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:31:39 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:33:33 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:33:33 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|     251.81µs|   match|[44m GET     [0m /swagger/
+2017/10/06 11:33:34 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    177.454µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:33:34 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    256.682µs|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:33:37 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:34:21 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:34:23 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:34:24 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:34:25 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|      207.7µs|   match|[44m GET     [0m /swagger/
+2017/10/06 11:34:25 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    264.596µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:34:25 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|      86.54µs|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:35:07 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:35:10 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:35:11 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    426.804µs|   match|[44m GET     [0m /swagger/
+2017/10/06 11:35:11 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    194.319µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:35:11 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    134.446µs|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:36:27 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:36:30 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:36:32 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:36:35 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:36:36 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    127.269µs|   match|[44m GET     [0m /swagger/
+2017/10/06 11:36:37 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|     268.31µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:36:37 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    125.573µs|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:36:37 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:36:42 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:36:46 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:36:47 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:39:19 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:39:23 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:39:23 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    315.315µs|   match|[44m GET     [0m /swagger/
+2017/10/06 11:39:24 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   37.90897ms|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:39:24 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  80.212923ms|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:39:59 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:40:02 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:40:05 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    253.475µs|   match|[44m GET     [0m /swagger/
+2017/10/06 11:40:05 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    379.257µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:40:05 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|     86.383µs|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:40:46 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:40:46 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    340.727µs|   match|[44m GET     [0m /swagger/
+2017/10/06 11:40:47 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|     184.64µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:40:47 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|     212.75µs|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:40:51 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:41:04 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:41:07 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:41:12 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    417.977µs|   match|[44m GET     [0m /swagger/
+2017/10/06 11:41:13 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|      155.1µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:41:13 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    557.711µs|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:41:51 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:41:51 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    487.027µs|   match|[44m GET     [0m /swagger/
+2017/10/06 11:41:52 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    227.693µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:41:52 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|     88.097µs|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:41:56 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:42:18 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:42:21 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:42:22 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    181.753µs|   match|[44m GET     [0m /swagger/
+2017/10/06 11:42:22 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    237.251µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:42:22 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    101.927µs|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:43:11 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:43:13 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    124.745µs|   match|[44m GET     [0m /swagger/
+2017/10/06 11:43:14 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    264.848µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 11:43:14 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    118.452µs|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 11:43:14 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:43:52 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:43:55 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:44:08 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:44:11 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:44:17 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:44:20 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:44:36 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:44:37 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:44:42 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:44:46 [D] [utils.go:43] 400 
+2017/10/06 11:44:46 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 233.295193ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:44:46 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/10/06 11:44:50 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 183.457641ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:45:08 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  39.937046ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:45:33 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:45:35 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 214.317086ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:45:36 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:45:47 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 168.552914ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:45:54 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 173.884065ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:46:46 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:46:50 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:46:59 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 246.450194ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:47:15 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 222.684224ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:47:37 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:47:40 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 246.912504ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:47:53 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  170.41229ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:48:17 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:48:22 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:48:33 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 208.929616ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 11:48:53 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:56:28 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 11:57:33 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:07:27 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:07:29 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:08:13 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:08:25 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m|  115.64176ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:12:29 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:12:55 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m|  92.553631ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:13:14 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:13:16 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m|  83.425213ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:13:22 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m|   99.24824ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:13:25 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m| 108.587277ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:13:52 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:14:06 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:14:07 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m| 104.175486ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:16:32 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:16:35 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:16:41 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:16:45 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:17:11 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:17:15 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:17:35 [D] [server.go:2568] |      127.0.0.1|[43m 401 [0m|  50.730885ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/10/06 12:19:24 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:19:27 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:19:32 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m|  89.850946ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:19:48 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m|  88.461015ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:19:54 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m|  87.323756ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:20:16 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m|  82.766441ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:20:38 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:20:38 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m| 112.416479ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:20:59 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m|  86.780308ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:21:10 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m|  88.481436ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:21:28 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m|  99.691246ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:21:53 [D] [server.go:2568] |      127.0.0.1|[43m 400 [0m| 123.212987ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:22:15 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 215.675662ms|   match|[46m POST    [0m /v1/user/create   r:/v1/user/create
+2017/10/06 12:22:40 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m| 234.261442ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2017/10/06 12:25:28 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:25:35 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:25:46 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:25:51 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:25:52 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:25:53 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|  20.755337ms|   match|[44m GET     [0m /swagger/
+2017/10/06 12:25:54 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    382.661µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 12:25:54 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  15.492943ms|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 12:26:26 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:26:27 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    513.057µs|   match|[44m GET     [0m /swagger/
+2017/10/06 12:26:27 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|    193.707µs|   match|[44m GET     [0m /swagger/swagger.json
+2017/10/06 12:26:27 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  63.169402ms|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2017/10/06 12:26:32 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:53:46 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099
+2017/10/06 12:53:59 [I] [asm_amd64.s:2197] http server Running on http://127.0.0.1:8099

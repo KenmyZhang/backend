@@ -1,0 +1,453 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "mini-chat API",
+        "description": "IM.",
+        "version": "1.0.0",
+        "contact": {
+            "email": "1027837952@qq.com"
+        },
+        "license": {}
+    },
+    "basePath": "/v1",
+    "paths": {
+        "/channel/create": {
+            "post": {
+                "tags": [
+                    "channel"
+                ],
+                "description": "create post",
+                "operationId": "PostController.create post",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "message",
+                        "description": "message",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "password",
+                        "description": "密码",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{Post}  models.Post"
+                    },
+                    "400": {
+                        "description": "no enough input"
+                    },
+                    "500": {
+                        "description": "get products common error"
+                    }
+                }
+            }
+        },
+        "/channel/{channel_id([A-Za-z0-9]+)}/posts": {
+            "get": {
+                "tags": [
+                    "channel"
+                ],
+                "description": "create post",
+                "operationId": "PostController.create post",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "message",
+                        "description": "message",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "password",
+                        "description": "密码",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{Post}  models.Post"
+                    },
+                    "400": {
+                        "description": "no enough input"
+                    },
+                    "500": {
+                        "description": "get products common error"
+                    }
+                }
+            }
+        },
+        "/file/upload": {
+            "post": {
+                "tags": [
+                    "file"
+                ],
+                "description": "login by username and password",
+                "operationId": "FileController.login",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "category_id",
+                        "description": "category id",
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "query",
+                        "name": "brand_id",
+                        "description": "brand id",
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "query",
+                        "name": "query",
+                        "description": "query of search",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "segment",
+                        "description": "segment",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "sort",
+                        "description": "sort option",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "dir",
+                        "description": "direction asc or desc",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "offset",
+                        "description": "offset",
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "query",
+                        "name": "limit",
+                        "description": "count limit",
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "query",
+                        "name": "price",
+                        "description": "price",
+                        "schema": {
+                            "$ref": "#/definitions/.float"
+                        }
+                    },
+                    {
+                        "in": "query",
+                        "name": "special_price",
+                        "description": "whether this is special price",
+                        "type": "boolean"
+                    },
+                    {
+                        "in": "query",
+                        "name": "size",
+                        "description": "size filter",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "color",
+                        "description": "color filter",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "format",
+                        "description": "choose return format",
+                        "type": "boolean"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "schema": {
+                            "$ref": "#/definitions/.ProductList"
+                        }
+                    },
+                    "400": {
+                        "description": "no enough input"
+                    },
+                    "500": {
+                        "description": "get products common error"
+                    }
+                }
+            }
+        },
+        "/post/create": {
+            "post": {
+                "tags": [
+                    "channel"
+                ],
+                "description": "create post",
+                "operationId": "PostController.create post",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "message",
+                        "description": "message",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "password",
+                        "description": "密码",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{Post}  models.Post"
+                    },
+                    "400": {
+                        "description": "no enough input"
+                    },
+                    "500": {
+                        "description": "get products common error"
+                    }
+                }
+            }
+        },
+        "/post/{channel_id([A-Za-z0-9]+)}/posts": {
+            "get": {
+                "tags": [
+                    "channel"
+                ],
+                "description": "create post",
+                "operationId": "PostController.create post",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "message",
+                        "description": "message",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "password",
+                        "description": "密码",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{Post}  models.Post"
+                    },
+                    "400": {
+                        "description": "no enough input"
+                    },
+                    "500": {
+                        "description": "get products common error"
+                    }
+                }
+            }
+        },
+        "/user/create": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "create user by email",
+                "operationId": "UserController.create user",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "username",
+                        "description": "username",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "password",
+                        "description": "password",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "email",
+                        "description": "email",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "the details of User",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "400": {
+                        "description": "no enough input"
+                    },
+                    "500": {
+                        "description": "get products common error"
+                    }
+                }
+            }
+        },
+        "/user/login": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "login by username and password",
+                "operationId": "UserController.login",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "username",
+                        "description": "用户名",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "password",
+                        "description": "密码",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "the details of User",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "400": {
+                        "description": "no enough input"
+                    },
+                    "500": {
+                        "description": "get products common error"
+                    }
+                }
+            }
+        },
+        "/user/logout": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "logout",
+                "operationId": "UserController.logout",
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "no enough input"
+                    },
+                    "500": {
+                        "description": "get products common error"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        ".ProductList": {
+            "type": "object"
+        },
+        ".float": {
+            "type": "object"
+        },
+        "models.User": {
+            "title": "User",
+            "type": "object",
+            "properties": {
+                "Age": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "AuthData": {
+                    "type": "string"
+                },
+                "AuthService": {
+                    "type": "string"
+                },
+                "CreateAt": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "DeleteAt": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "Email": {
+                    "type": "string"
+                },
+                "EmailVerified": {
+                    "type": "boolean"
+                },
+                "FailedAttempts": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "Id": {
+                    "type": "string"
+                },
+                "LastPasswordUpdate": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "LastPictureUpdate": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "Nickname": {
+                    "type": "string"
+                },
+                "Password": {
+                    "type": "string"
+                },
+                "PhoneNum": {
+                    "type": "string"
+                },
+                "Position": {
+                    "type": "string"
+                },
+                "Roles": {
+                    "type": "string"
+                },
+                "UpdateAt": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "Username": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "user",
+            "description": "USER API\n"
+        }
+    ]
+}
