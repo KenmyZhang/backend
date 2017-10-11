@@ -1,29 +1,13 @@
 # quick start
-# bee run -gendoc=true -downdoc=true
-# 
-    curl -X GET  http://127.0.0.1:8099/v1/user/login  -i
-        HTTP/1.1 200 OK
-        Content-Length: 259
-        Content-Type: text/plain; charset=utf-8
-        Date: Thu, 14 Sep 2017 09:29:32 GMT
-        Keep-Alive: timeout=38
-        Server: beegoServer:1.9.0
-        Set-Cookie: mini-chat=9f1d6768e1d8c59ec846971e9d340a86; Path=/; Expires=Thu, 14 Sep 2017 10:29:32 GMT; Max-Age=3600; HttpOnly
-        Set-Cookie: _xsrf=Z0Y2MFI4RUVsV0hzM2dCbkRFdGk3enpQdTYzeFRNZE0=|1505381372862816404|172a2b56bf8645daccfeb95b99d56cad966aafa0; Expires=Thu, 14 Sep 2017 10:29:32 UTC; Max-Age=3600; Path=/
+##
+    CREATE DATABASE test;
 
-{"Id":"","CreateAt":0,"UpdateAt":0,"DeleteAt":0,"Username":"","Password":"","AuthData":null,"AuthService":"","Email":"","EmailVerified":false,"Nickname":"","Position":"","Roles":"","PhoneNum":"","LastPasswordUpdate":0,"LastPictureUpdate":0,"FailedAttempts":0}
-
-    curl -X POST  http://127.0.0.1:8099/v1/user/create  -i  -d '{"Username":"test1"}' -H "X-Xsrftoken: NFB0bk8ySElha1BVZ2xWbjQwUVMwM0p3NzR5SmhBeFE=" -b  _xsrf="NFB0bk8ySElha1BVZ2xWbjQwUVMwM0p3NzR5SmhBeFE=|1505352313570994157|a8cefbb2fb54ab3cbab9cc76a50b13f63bb36571"
-        HTTP/1.1 200 OK
-        Content-Length: 5
-        Content-Type: text/plain; charset=utf-8
-        Date: Thu, 14 Sep 2017 01:34:52 GMT
-        Keep-Alive: timeout=38
-        Server: beegoServer:1.9.0
-        Set-Cookie: mini-chat=d3bf4121d983576fd7cfd00f15d62029; Path=/; Expires=Thu, 14 Sep 2017 02:34:52 GMT; Max-Age=3600; HttpOnly
-
-error
-
+    CREATE TABLE `session` (
+        `session_key` char(64) NOT NULL,
+        `session_data` blob,
+        `session_expiry` int(11) unsigned NOT NULL,
+        PRIMARY KEY (`session_key`)
+    ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 # 当enablexsrf = true时,其中X-Xsrftoken头域的值是cookie第一个字段解码后的值
     // GetSecureCookie Get secure cookie from request by a given key.
@@ -57,21 +41,6 @@ error
     xsrf = $.cookie("_xsrf");
     xsrflist = xsrf.split("|");
     args._xsrf = base64_decode(xsrflist[0]);
-
-
-
-
-
-    curl -X POST  http://127.0.0.1:8099/v1/user/logout  -i -b  "mini-chat=5b878569fa8022dd398b8a9ed3edd448"
-        HTTP/1.1 200 OK
-        Content-Length: 9
-        Content-Type: text/plain; charset=utf-8
-        Date: Thu, 14 Sep 2017 09:44:22 GMT
-        Keep-Alive: timeout=38
-        Server: beegoServer:1.9.0
-
-        hellotest
-
 
 # parameters
 ### Get URL parameters

@@ -6,21 +6,21 @@ import (
 )
 
 type Post struct {
-	Id            string          `bson:"_id" json:"id"`
-	CreateAt      int64           `bson:"createAt" json:"create_at"`
-	UpdateAt      int64           `bson:"updateAt" json:"update_at"`
-	EditAt        int64           `bson:"editAt" json:"edit_at"`
-	DeleteAt      int64           `bson:"deleteAt" json:"delete_at"`
-	UserId        string          `bson:"userId" json:"user_id"`
-	ChannelId     string          `bson:"channelId" json:"channel_id"`
-	Message       string          `bson:"message" json:"message"`
-	Type          string          `bson:"type" json:"type"`
-	Props         map[string] interface{} `bson:"props" json:"props"`
-	Filenames     []string     `bson:"filenames" json:"filenames,omitempty"` // Deprecated, do not use this field any more
-	FileIds       []string     `bson:"fileIds" json:"file_ids,omitempty"`
-	FileTypes     []string     `bson:"fileTypes" json:"file_types,omitempty"`
-	PendingPostId string          `bson:"-" db:"-" json:"pending_post_id"`
-	LastPictureUpdate  int64      `bson:"lastPictureUpdate" json:"last_picture_update,omitempty"`
+	Id                 string                 `orm:"pk"` 
+	CreateAt           int64                  `orm:"null"`
+	UpdateAt           int64                  `orm:"null"`
+	EditAt             int64                  `orm:"null"`
+	DeleteAt           int64                  `orm:"null"`
+	UserId             string                 `orm:"size(50)"`
+	ChannelId          string                 `orm:"size(50)"`
+	Message            string                 `orm:"size(50)"`
+	Type               string                 `orm:"size(50)"`
+	PendingPostId      string                 `orm:"size(50)"`
+	LastPictureUpdate  int64                  `orm:"null"`
+}
+
+func init() {
+    orm.RegisterModel(new(Post))
 }
 
 func PostToJson(u *Post) string {
@@ -53,18 +53,6 @@ func (o *Post) PreSave() {
 	}
 
 	o.UpdateAt = o.CreateAt
-
-	if o.Props == nil {
-		o.Props = make(map[string]interface{})
-	}
-
-	if o.Filenames == nil {
-		o.Filenames = []string{}
-	}
-
-	if o.FileIds == nil {
-		o.FileIds = []string{}
-	}
 }
 
 func CreatePost(post *Post) (*Post, error) {

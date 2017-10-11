@@ -7,6 +7,14 @@ import (
 
 func init() {
 
+	beego.GlobalControllerRouter["github.com/KenmyZhang/mini-chat/controllers:ChannelController"] = append(beego.GlobalControllerRouter["github.com/KenmyZhang/mini-chat/controllers:ChannelController"],
+		beego.ControllerComments{
+			Method: "CreateDirectChannel",
+			Router: `/create`,
+			AllowHTTPMethods: []string{"post"},
+			MethodParams: param.Make(),
+			Params: nil})
+
 	beego.GlobalControllerRouter["github.com/KenmyZhang/mini-chat/controllers:FileController"] = append(beego.GlobalControllerRouter["github.com/KenmyZhang/mini-chat/controllers:FileController"],
 		beego.ControllerComments{
 			Method: "UploadFile",

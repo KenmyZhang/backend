@@ -1,22 +1,25 @@
-     curl -X POST "http://127.0.0.1:8099/v1/user/create" -i -d '{"username": "Beegzhang","password":"123456","email":"1023@qq.com","age":21,"phoneNum":"13544285662"}'
+
+  
+
+    curl -X POST http://127.0.0.1:8099/v1/file/upload -i -F "uploadname=@/home/kenmy/Downloads/wx_sample.php"
     HTTP/1.1 200 OK
-    Content-Length: 417
+    Content-Length: 7
     Content-Type: text/plain; charset=utf-8
-    Date: Fri, 06 Oct 2017 04:22:15 GMT
+    Date: Fri, 06 Oct 2017 05:09:09 GMT
     Keep-Alive: timeout=38
     Server: beegoServer:1.9.0
-    Set-Cookie: mini-chat=7a849d4441a7c16112220d72da834c1c; Path=/; Expires=Fri, 06 Oct 2017 05:22:15 GMT; Max-Age=3600; HttpOnly
+    Set-Cookie: mini-chat=17bd7ca43486b1843348e96a1c0c656e; Path=/; Expires=Fri, 06 Oct 2017 06:09:09 GMT; Max-Age=3600; HttpOnly
 
-    {"Id":"58w1b1sjkidsdmdphhcchs","CreateAt":1507263735423,"UpdateAt":1507263735423,"DeleteAt":0,"Username":"beegzhang","Password":"$2a$10$0VssMCNyd8ZpdJd1DtddqeyKEhte7rHGYrpWHiRoNhlX18xih.Vp2","AuthData":null,"AuthService":"","Email":"1023@qq.com","EmailVerified":false,"Age":21,"Nickname":"","Position":"","Roles":"","PhoneNum":"13544285662","LastPasswordUpdate":1507263735423,"LastPictureUpdate":0,"FailedAttempts":0}
+    success    
 
-
-     curl -X POST "http://127.0.0.1:8099/v1/user/login" -i -d '{"username": "Beegzhang","password":"123456"}'
+    curl -X POST http://127.0.0.1:8099/v1/user/logout -i 
     HTTP/1.1 200 OK
-    Content-Length: 417
+    Content-Length: 7
     Content-Type: text/plain; charset=utf-8
-    Date: Fri, 06 Oct 2017 04:22:40 GMT
+    Date: Fri, 06 Oct 2017 05:11:07 GMT
     Keep-Alive: timeout=38
     Server: beegoServer:1.9.0
-    Set-Cookie: mini-chat=4c5dcca5c5914561345d5596a19b0737; Path=/; Expires=Fri, 06 Oct 2017 05:22:40 GMT; Max-Age=3600; HttpOnly
+    Set-Cookie: mini-chat=98b71e82385ad391eafe60ee0cb82715; Path=/; Expires=Fri, 06 Oct 2017 06:11:07 GMT; Max-Age=3600; HttpOnly
+    Set-Cookie: mini-chat=; Path=/; Expires=Fri, 06 Oct 2017 05:11:07 GMT; Max-Age=0; HttpOnly
 
-    {"Id":"58w1b1sjkidsdmdphhcchs","CreateAt":1507263735423,"UpdateAt":1507263735423,"DeleteAt":0,"Username":"beegzhang","Password":"$2a$10$0VssMCNyd8ZpdJd1DtddqeyKEhte7rHGYrpWHiRoNhlX18xih.Vp2","AuthData":null,"AuthService":"","Email":"1023@qq.com","EmailVerified":false,"Age":21,"Nickname":"","Position":"","Roles":"","PhoneNum":"13544285662","LastPasswordUpdate":1507263735423,"LastPictureUpdate":0,"FailedAttempts":0}   
+    success    

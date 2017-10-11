@@ -39,7 +39,7 @@ func init() {
 
             beego.NSNamespace("/channel",
                 beego.NSInclude(
-                    &controllers.PostController{},
+                    &controllers.ChannelController{},
                 ),
             ),
 

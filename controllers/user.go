@@ -30,7 +30,7 @@ func (c *UserController) CreateUser() {
 	if ruser, err := models.CreateUser(ob); err != nil {
 		models.AppError(c.Ctx, err.Error(), http.StatusBadRequest)
 	} else {
-    	c.Ctx.WriteString(models.UserToJson(ruser))
+    	c.Ctx.WriteString(ruser.ToJson())
     	return
     }
 }
@@ -89,7 +89,7 @@ func (c *UserController) Login() {
 	} else {
 		c.SetSession("user_id",user.Id)
 		c.SetSession("roles",user.Roles)
-        c.Ctx.WriteString(models.UserToJson(user))
+        c.Ctx.WriteString(user.ToJson())
     }
 }
 // @Title logout
@@ -100,7 +100,7 @@ func (c *UserController) Login() {
 // @router /logout [post]
 func (c *UserController) Logout() {
 	c.DestroySession()
-
+	c.Ctx.WriteString("success")
 }
 
 func (c *UserController) test() {

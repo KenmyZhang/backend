@@ -43,6 +43,12 @@ func AppError(ctx *context.Context, details string, status int) {
 	return
 }
 
+func SetPermissionError(ctx *context.Context, permission *Permission, status int) {
+	ctx.Output.SetStatus(status)
+	ctx.Output.Body([]byte(ctx.Input.Session("user_id").(string) + "has no permission:" + permission.Id))
+	return
+}
+
 func MapFromJson(data io.Reader) map[string]string {
 	decoder := json.NewDecoder(data)
 
@@ -57,3 +63,4 @@ func MapFromJson(data io.Reader) map[string]string {
 func GetMillis() int64 {
 	return time.Now().UnixNano() / int64(time.Millisecond)
 }
+

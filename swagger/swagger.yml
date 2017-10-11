@@ -60,70 +60,17 @@ paths:
     post:
       tags:
       - file
-      description: login by username and password
-      operationId: FileController.login
+      description: upload file
+      operationId: FileController.upload
       parameters:
-      - in: query
-        name: category_id
-        description: category id
-        type: integer
-        format: int64
-      - in: query
-        name: brand_id
-        description: brand id
-        type: integer
-        format: int64
-      - in: query
-        name: query
-        description: query of search
-        type: string
-      - in: query
-        name: segment
-        description: segment
-        type: string
-      - in: query
-        name: sort
-        description: sort option
-        type: string
-      - in: query
-        name: dir
-        description: direction asc or desc
-        type: string
-      - in: query
-        name: offset
-        description: offset
-        type: integer
-        format: int64
-      - in: query
-        name: limit
-        description: count limit
-        type: integer
-        format: int64
-      - in: query
-        name: price
-        description: price
+      - in: string
+        name: formData
+        description: the path of upload file
         schema:
-          $ref: '#/definitions/.float'
-      - in: query
-        name: special_price
-        description: whether this is special price
-        type: boolean
-      - in: query
-        name: size
-        description: size filter
-        type: string
-      - in: query
-        name: color
-        description: color filter
-        type: string
-      - in: query
-        name: format
-        description: choose return format
-        type: boolean
+          $ref: '#/definitions/.true'
       responses:
         "200":
-          schema:
-            $ref: '#/definitions/.ProductList'
+          description: upload success
         "400":
           description: no enough input
         "500":
@@ -250,6 +197,8 @@ definitions:
   .ProductList:
     type: object
   .float:
+    type: object
+  .true:
     type: object
   models.User:
     title: User

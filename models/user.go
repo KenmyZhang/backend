@@ -50,7 +50,11 @@ func (u *User) Valid(v *validation.Validation) {
     }
 }
 
-func UserToJson(u *User) string {
+func (u *User) GetRoles() []string {
+	return strings.Fields(u.Roles)
+}
+
+func (u *User) ToJson() string {
 	b, err := json.Marshal(u)
 	if err != nil {
 		return ""
@@ -78,6 +82,14 @@ func CreateUser(user *User) (*User, error) {
     }	
     o := orm.NewOrm()
     o.Using("default")
+    var count int
+    err = o.Raw("SELECT COUNT(*) FROM user").QueryRow(&count)
+	if count == 0 {
+		user.Roles = "system_admin"
+	} else {
+		user.Roles = "normal_user"
+	}
+
 	if _, err := o.Insert(user); err != nil {
 		return nil, err
 	}
@@ -85,8 +97,15 @@ func CreateUser(user *User) (*User, error) {
 }
 
 
-func GetUser() {
+func GetUser(userId string) (*User, error) {
+	user := &User{}
+	o := orm.NewOrm()
+	
+	if err := o.QueryTable("user").Filter("Id", userId).One(user); err != nil {
+		return nil, errors.New("read user failed:" + err.Error())
+	}
 
+	return user, nil
 }
 
 func AuthenticateUserForLogin(username , password string) (*User, error) {
