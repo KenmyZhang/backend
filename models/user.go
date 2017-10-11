@@ -17,7 +17,7 @@ type User struct {
 	DeleteAt           int64     `orm:"null"` 
 	Username           string    `orm:"size(50); unique" valid:"Required"`
 	Password           string    `orm:"size(100)"`
-	AuthData           *string   `orm:"null"`
+	AuthData           string   `orm:"size(50)"`
 	AuthService        string    `orm:"null"`
 	Email              string    `orm:"null" valid:"Email; MaxSize(100)"`
 	EmailVerified      bool      `orm:"null"`
@@ -83,7 +83,10 @@ func CreateUser(user *User) (*User, error) {
     o := orm.NewOrm()
     o.Using("default")
     var count int
-    err = o.Raw("SELECT COUNT(*) FROM user").QueryRow(&count)
+    if err := o.Raw("SELECT COUNT(*) FROM user").QueryRow(&count); err != nil {
+    	return nil, err
+    }
+
 	if count == 0 {
 		user.Roles = "system_admin"
 	} else {
@@ -158,10 +161,6 @@ func (u *User) PreSave() {
 
 	if u.Username == "" {
 		u.Username = NewId()
-	}
-
-	if u.AuthData != nil && *u.AuthData == "" {
-		u.AuthData = nil
 	}
 
 	u.Username = strings.ToLower(u.Username)

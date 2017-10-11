@@ -16,7 +16,7 @@ func (this *PostController) Prepare() {
 
 // @Title create post
 // @Description create post
-// @Success 200 {Post}  models.Post
+// @Success 200 {object}  models.Post the details of post
 // @Param   channel_id   body   string true       "message"
 // @Param   message      body   string true       "密码"
 // @Failure 400 no enough input
@@ -46,20 +46,18 @@ func (c *PostController) CreatePost() {
     }
 }
 
-// @Title create post
-// @Description create post
-// @Success 200 {Post}  models.Post
-// @Param   message    body   string true       "message"
-// @Param   password    body   string true       "密码"
+// @Title get post
+// @Description get post
+// @Success 200 {object}  []models.Post the details of post
+// @Param   channel_id    body   string true       "channel_id"
 // @Failure 400 no enough input
 // @Failure 500 get products common error
-// @router /:channel_id([A-Za-z0-9]+)/posts [get]
-func (c *PostController) GetPost() {
+// @router /channel/:channel_id([A-Za-z0-9]+)/posts [get]
+func (c *PostController) GetPosts() {
     channelId := c.Ctx.Input.Param(":channel_id")
     page, _ := c.GetInt("page")
-    perpage, _ := c.GetInt("perpage")
-
-	if posts, err := models.GetPost(channelId, page, perpage); err != nil {
+    perpage, _ := c.GetInt("per_page")
+	if posts, err := models.GetPosts(channelId, page*perpage, perpage); err != nil {
 		models.AppError(c.Ctx, err.Error(), http.StatusInternalServerError)
 		return
 	} else {

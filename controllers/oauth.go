@@ -12,7 +12,7 @@ type OauthController struct {
 }
 // @Title login
 // @Description login by username and password
-// @Success 200 {object} models.ZDTProduct.ProductList
+// @Success 200  
 // @Param   category_id     query   int false       "category id"
 // @Param   brand_id    query   int false       "brand id"
 // @Param   query   query   string  false       "query of search"

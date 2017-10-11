@@ -33,8 +33,8 @@ func init() {
 
 	beego.GlobalControllerRouter["github.com/KenmyZhang/mini-chat/controllers:PostController"] = append(beego.GlobalControllerRouter["github.com/KenmyZhang/mini-chat/controllers:PostController"],
 		beego.ControllerComments{
-			Method: "GetPost",
-			Router: `/:channel_id([A-Za-z0-9]+)/posts`,
+			Method: "GetPosts",
+			Router: `/channel/:channel_id([A-Za-z0-9]+)/posts`,
 			AllowHTTPMethods: []string{"get"},
 			MethodParams: param.Make(),
 			Params: nil})

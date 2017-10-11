@@ -1,27 +1,27 @@
 package models
 
 import (
-	"github.com/astaxie/beego/orm"
 	"encoding/json"
+	"github.com/astaxie/beego/orm"
 )
 
 type Post struct {
-	Id                 string  `orm:"pk" json:"id"` 
-	CreateAt           int64   `orm:"null" json:"create_at"`
-	UpdateAt           int64   `orm:"null" json:"update_at"`
-	DeleteAt           int64   `orm:"null" json:"delete_at"`
-	UserId             string  `orm:"size(50)" json:"user_id"`
-	ChannelId          string  `orm:"size(50)" json:"channel_id"`
-	Message            string  `orm:"size(50)" json:"message"`
-	Type               string  `orm:"size(50)" json:"type"`
-	LastPictureUpdate  int64   `orm:"null" json:"last_picture_update"`
+	Id                string `orm:"pk" json:"id"`
+	CreateAt          int64  `orm:"null" json:"create_at"`
+	UpdateAt          int64  `orm:"null" json:"update_at"`
+	DeleteAt          int64  `orm:"null" json:"delete_at"`
+	UserId            string `orm:"size(50)" json:"user_id"`
+	ChannelId         string `orm:"size(50)" json:"channel_id"`
+	Message           string `orm:"size(50)" json:"message"`
+	Type              string `orm:"size(50)" json:"type"`
+	LastPictureUpdate int64  `orm:"null" json:"last_picture_update"`
 }
 
 func init() {
-    orm.RegisterModel(new(Post))
+	orm.RegisterModel(new(Post))
 }
 
-func (u *Post)ToJson() string {
+func (u *Post) ToJson() string {
 	b, err := json.Marshal(u)
 	if err != nil {
 		return ""
@@ -39,8 +39,6 @@ func PostsToJson(u *[]Post) string {
 	}
 }
 
-
-
 func (o *Post) PreSave() {
 	if o.Id == "" {
 		o.Id = NewId()
@@ -55,18 +53,20 @@ func (o *Post) PreSave() {
 
 func CreatePost(post *Post) (*Post, error) {
 	post.PreSave()
-    o := orm.NewOrm()
-    o.Using("default")
+	o := orm.NewOrm()
+	o.Using("default")
 	if _, err := o.Insert(post); err != nil {
 		return nil, err
 	}
 	return post, nil
 }
 
-func GetPost(channelId string, page, perpage int) ( *[]Post, error) {
+func GetPosts(channelId string, offset, limit int) (*[]Post, error) {
 	posts := &[]Post{}
-    o := orm.NewOrm()
-    o.Using("default")
-
-	return posts,nil
+	o := orm.NewOrm()
+	o.Using("default")
+    if _, err := o.Raw("SELECT * FROM post where channel_id = ? limit ?, ?",channelId, offset, limit).QueryRows(posts); err != nil {
+    	return nil, err
+    }
+	return posts, nil
 }

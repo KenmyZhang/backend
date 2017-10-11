@@ -16,63 +16,26 @@
                 "tags": [
                     "channel"
                 ],
-                "description": "create post",
-                "operationId": "PostController.create post",
+                "description": "CreateDirectChannel",
+                "operationId": "ChannelController.CreateDirectChannel",
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "message",
-                        "description": "message",
+                        "name": "userIds",
+                        "description": "userIds",
                         "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "in": "body",
-                        "name": "password",
-                        "description": "密码",
-                        "required": true,
-                        "type": "string"
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
                     }
                 ],
                 "responses": {
                     "200": {
-                        "description": "{Post}  models.Post"
-                    },
-                    "400": {
-                        "description": "no enough input"
-                    },
-                    "500": {
-                        "description": "get products common error"
-                    }
-                }
-            }
-        },
-        "/channel/{channel_id([A-Za-z0-9]+)}/posts": {
-            "get": {
-                "tags": [
-                    "channel"
-                ],
-                "description": "create post",
-                "operationId": "PostController.create post",
-                "parameters": [
-                    {
-                        "in": "body",
-                        "name": "message",
-                        "description": "message",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "in": "body",
-                        "name": "password",
-                        "description": "密码",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "{Post}  models.Post"
+                        "description": "the details of Channel",
+                        "schema": {
+                            "$ref": "#/definitions/models.Channel"
+                        }
                     },
                     "400": {
                         "description": "no enough input"
@@ -94,10 +57,7 @@
                     {
                         "in": "string",
                         "name": "formData",
-                        "description": "the path of upload file",
-                        "schema": {
-                            "$ref": "#/definitions/.true"
-                        }
+                        "description": "the path of upload file"
                     }
                 ],
                 "responses": {
@@ -113,32 +73,31 @@
                 }
             }
         },
-        "/post/create": {
-            "post": {
+        "/post/channel/{channel_id([A-Za-z0-9]+)}/posts": {
+            "get": {
                 "tags": [
-                    "channel"
+                    "post"
                 ],
-                "description": "create post",
-                "operationId": "PostController.create post",
+                "description": "get post",
+                "operationId": "PostController.get post",
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "message",
-                        "description": "message",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "in": "body",
-                        "name": "password",
-                        "description": "密码",
+                        "name": "channel_id",
+                        "description": "channel_id",
                         "required": true,
                         "type": "string"
                     }
                 ],
                 "responses": {
                     "200": {
-                        "description": "{Post}  models.Post"
+                        "description": "the details of post",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.Post"
+                            }
+                        }
                     },
                     "400": {
                         "description": "no enough input"
@@ -149,24 +108,24 @@
                 }
             }
         },
-        "/post/{channel_id([A-Za-z0-9]+)}/posts": {
-            "get": {
+        "/post/create": {
+            "post": {
                 "tags": [
-                    "channel"
+                    "post"
                 ],
                 "description": "create post",
                 "operationId": "PostController.create post",
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "message",
+                        "name": "channel_id",
                         "description": "message",
                         "required": true,
                         "type": "string"
                     },
                     {
                         "in": "body",
-                        "name": "password",
+                        "name": "message",
                         "description": "密码",
                         "required": true,
                         "type": "string"
@@ -174,7 +133,10 @@
                 ],
                 "responses": {
                     "200": {
-                        "description": "{Post}  models.Post"
+                        "description": "the details of post",
+                        "schema": {
+                            "$ref": "#/definitions/models.Post"
+                        }
                     },
                     "400": {
                         "description": "no enough input"
@@ -292,14 +254,89 @@
         }
     },
     "definitions": {
-        ".ProductList": {
-            "type": "object"
+        "models.Channel": {
+            "title": "Channel",
+            "type": "object",
+            "properties": {
+                "CreateAt": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "CreatorId": {
+                    "type": "string"
+                },
+                "DeleteAt": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "DisplayName": {
+                    "type": "string"
+                },
+                "Header": {
+                    "type": "string"
+                },
+                "LastPostAt": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "Purpose": {
+                    "type": "string"
+                },
+                "TotalMsgCount": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "Type": {
+                    "type": "string"
+                },
+                "UpdateAt": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "id": {
+                    "type": "string"
+                }
+            }
         },
-        ".float": {
-            "type": "object"
-        },
-        ".true": {
-            "type": "object"
+        "models.Post": {
+            "title": "Post",
+            "type": "object",
+            "properties": {
+                "channel_id": {
+                    "type": "string"
+                },
+                "create_at": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "delete_at": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "last_picture_update": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "update_at": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "user_id": {
+                    "type": "string"
+                }
+            }
         },
         "models.User": {
             "title": "User",
