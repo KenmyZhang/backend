@@ -17,19 +17,14 @@ func (this *PostController) Prepare() {
 // @Title create post
 // @Description create post
 // @Success 200 {Post}  models.Post
-// @Param   message    body   string true       "message"
-// @Param   password    body   string true       "密码"
+// @Param   channel_id   body   string true       "message"
+// @Param   message      body   string true       "密码"
 // @Failure 400 no enough input
 // @Failure 500 get products common error
 // @router /create [post]
 func (c *PostController) CreatePost() {
     ob := &models.Post{}
     json.Unmarshal(c.Ctx.Input.RequestBody, ob)
-
-    if len(ob.UserId) == 0 {
-    	models.SetInvalidParam(c.Ctx, "Post.UserId", http.StatusBadRequest)
-    	return
-    }
 
     if len(ob.Message) == 0 {
     	models.SetInvalidParam(c.Ctx, "Post.message", http.StatusBadRequest)
@@ -41,11 +36,13 @@ func (c *PostController) CreatePost() {
     	return
     }
 
+    ob.UserId = c.GetSession("user_id").(string)
+
 	if post, err := models.CreatePost(ob); err != nil {
 		models.AppError(c.Ctx, err.Error(), http.StatusUnauthorized)
 		return
 	} else {
-        c.Ctx.WriteString(models.PostToJson(post))
+        c.Ctx.WriteString(post.ToJson())
     }
 }
 

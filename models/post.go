@@ -6,24 +6,22 @@ import (
 )
 
 type Post struct {
-	Id                 string                 `orm:"pk"` 
-	CreateAt           int64                  `orm:"null"`
-	UpdateAt           int64                  `orm:"null"`
-	EditAt             int64                  `orm:"null"`
-	DeleteAt           int64                  `orm:"null"`
-	UserId             string                 `orm:"size(50)"`
-	ChannelId          string                 `orm:"size(50)"`
-	Message            string                 `orm:"size(50)"`
-	Type               string                 `orm:"size(50)"`
-	PendingPostId      string                 `orm:"size(50)"`
-	LastPictureUpdate  int64                  `orm:"null"`
+	Id                 string  `orm:"pk" json:"id"` 
+	CreateAt           int64   `orm:"null" json:"create_at"`
+	UpdateAt           int64   `orm:"null" json:"update_at"`
+	DeleteAt           int64   `orm:"null" json:"delete_at"`
+	UserId             string  `orm:"size(50)" json:"user_id"`
+	ChannelId          string  `orm:"size(50)" json:"channel_id"`
+	Message            string  `orm:"size(50)" json:"message"`
+	Type               string  `orm:"size(50)" json:"type"`
+	LastPictureUpdate  int64   `orm:"null" json:"last_picture_update"`
 }
 
 func init() {
     orm.RegisterModel(new(Post))
 }
 
-func PostToJson(u *Post) string {
+func (u *Post)ToJson() string {
 	b, err := json.Marshal(u)
 	if err != nil {
 		return ""

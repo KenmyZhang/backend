@@ -8,12 +8,12 @@ import (
 )
 
 type Audit struct {
-	Id        string `bson:"_id" json:"id"`
-	CreateAt  int64  `bson:"createAt" json:"create_at"`
-	UserId    string `bson:"userId" json:"user_id"`
-	Action    string `bson:"action" json:"action"`
-	ExtraInfo string `bson:"extraInfo" json:"extra_info"`
-	IpAddress string `bson:"ipAddress" json:"ip_address"`
+	Id        string `json:"id"`
+	CreateAt  int64  `json:"create_at"`
+	UserId    string `json:"user_id"`
+	Action    string `json:"action"`
+	ExtraInfo string `json:"extra_info"`
+	IpAddress string `json:"ip_address"`
 }
 
 func (o *Audit) ToJson() string {

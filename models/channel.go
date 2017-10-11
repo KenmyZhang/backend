@@ -30,7 +30,7 @@ const (
 )
 
 type Channel struct {
-	Id            string   `orm:"pk"`
+	Id            string   `orm:"pk" json:"id"`
 	CreateAt      int64    `orm:"null"`
 	UpdateAt      int64    `orm:"null"`
 	DeleteAt      int64    `orm:"null"`
